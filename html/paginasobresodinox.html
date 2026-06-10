@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - SODINOX</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:#f5f5f5;
+      line-height:1.7;
+    }
+
+    header{
+      background:linear-gradient(to bottom,#2a2a2a,#111);
+      padding:20px 5%;
+      border-bottom:3px solid #999;
+    }
+
+    .topo{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .logo img{
+      width:260px;
+      max-width:100%;
+    }
+
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:silver;
+    }
+
+    .banner{
+      height:50vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      background:
+      linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
+      url('../images/soldagem inox.jpg');
+
+      background-size:cover;
+      background-position:center;
+    }
+
+    .banner h1{
+      font-size:3rem;
+      text-transform:uppercase;
+      color:silver;
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .sobre-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .sobre-grid img{
+      width:100%;
+      border-radius:10px;
+      border:2px solid #333;
+    }
+
+    h2{
+      color:silver;
+      margin-bottom:20px;
+      font-size:2rem;
+    }
+
+    p{
+      margin-bottom:20px;
+      color:#ddd;
+    }
+
+    .valores{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:50px;
+    }
+
+    .card{
+      background:#1c1c1c;
+      padding:30px;
+      border-radius:10px;
+      border:1px solid #333;
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      border-color:silver;
+    }
+
+    .card h3{
+      color:silver;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:30px;
+      border-top:2px solid #333;
+    }
+
+    footer p{
+      color:#999;
+    }
+
+    @media(max-width:768px){
+
+      .sobre-grid{
+        grid-template-columns:1fr;
+      }
+
+      .banner h1{
+        font-size:2rem;
+      }
+
+      nav{
+        width:100%;
+        text-align:center;
+      }
+
+      nav a{
+        display:inline-block;
+        margin:10px;
+      }
+
+      .topo{
+        justify-content:center;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="topo">
+
+      <div class="logo">
+        <img src="../images/logo-sodinox.jpeg" alt="Logo SODINOX">
+      </div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Contato</a>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <section class="banner">
+    <h1>Sobre Nós</h1>
+  </section>
+
+  <section>
+
+    <div class="container">
+
+      <div class="sobre-grid">
+
+        <div>
+          <img src="../images/logo-sodinox.jpeg" alt="SODINOX">
+        </div>
+
+        <div>
+
+          <h2>Quem Somos</h2>
+
+          <p>
+            A SODINOX é especializada em soluções em aço inox,
+            oferecendo qualidade, resistência e sofisticação
+            em cada projeto desenvolvido.
+          </p>
+
+          <p>
+            Atuamos nos segmentos residencial, comercial
+            e industrial, entregando projetos personalizados
+            com acabamento profissional e alta durabilidade.
+          </p>
+
+          <p>
+            Nosso compromisso é unir tecnologia,
+            segurança e design moderno para garantir
+            a satisfação total dos nossos clientes.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="valores">
+
+        <div class="card">
+          <h3>Missão</h3>
+
+          <p>
+            Desenvolver soluções em aço inox com excelência,
+            segurança e qualidade para atender diferentes
+            necessidades do mercado.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Visão</h3>
+
+          <p>
+            Ser referência no setor metalúrgico pela inovação,
+            acabamento premium e compromisso com o cliente.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Valores</h3>
+
+          <p>
+            Qualidade, responsabilidade, transparência,
+            comprometimento e valorização dos detalhes
+            em cada projeto realizado.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>
+      © 2026 SODINOX - Todos os direitos reservados.
+    </p>
+  </footer>
+
+</body>
+</html>
+
