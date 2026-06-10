@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a Sodinox por WhatsApp, e-mail ou Google Maps e conheça o horário de atendimento.">
+  <meta name="theme-color" content="#0e1116">
+  <title>Contato | Sodinox</title>
+  <link rel="stylesheet" href="../estilos/geral.css">
+  <link rel="stylesheet" href="../estilos/contato.css">
+  <script defer src="../scripts/principal.js"></script>
+  <script defer src="../scripts/mapa.js"></script>
+</head>
+<body data-pagina="contato">
+  <a class="link-salto" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header class="cabecalho-site">
+    <div class="conteiner barra-cabecalho">
+      <a class="marca" href="../index.html" aria-label="Sodinox - página inicial">
+        <img src="../imagens/marca-sodinox.png" alt="Logotipo da Sodinox">
+        <span class="texto-marca">
+          <strong>Sodinox</strong>
+          <small>Arte em aço inox</small>
+        </span>
+      </a>
+
+      <button class="botao-menu" type="button" aria-expanded="false" aria-controls="navegacao-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="texto-acessivel">Abrir menu</span>
+      </button>
+
+      <nav id="navegacao-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <a href="../index.html" data-navegacao="inicio">Início</a>
+        <a href="produtos.html" data-navegacao="produtos">Produtos</a>
+        <a href="sobre.html" data-navegacao="sobre">Sobre Nós</a>
+        <a href="contato.html" data-navegacao="contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <section class="cabecalho-pagina secao">
+      <div class="conteiner casca-pagina superficie-cartao" data-animar>
+        <p class="rotulo">Contato direto</p>
+        <h1>Fale com a Sodinox, peça orçamento e descubra como chegar até a empresa.</h1>
+        <p class="texto-destaque">
+          Esta página reúne os canais de atendimento mais importantes e um mapa incorporado para apoiar visitas e solicitações comerciais.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="conteiner grade-contato">
+        <article class="cartao-contato superficie-cartao" data-animar>
+          <span class="selo-icone">WA</span>
+          <h2>WhatsApp</h2>
+          <p>Abra a conversa para solicitar orçamento, tirar dúvidas ou compartilhar a necessidade do seu projeto.</p>
+          <a class="botao botao-principal" href="#" data-link-whatsapp>Conversar no WhatsApp</a>
+        </article>
+
+        <article class="cartao-contato superficie-cartao" data-animar>
+          <span class="selo-icone">@</span>
+          <h2>E-mail</h2>
+          <p>Envie informações detalhadas e receba retorno por um canal formal de comunicação.</p>
+          <a class="botao botao-secundario" href="#" data-link-email>Enviar e-mail</a>
+        </article>
+
+        <article class="cartao-contato superficie-cartao" data-animar>
+          <span class="selo-icone">MAP</span>
+          <h2>Localização</h2>
+          <p>Consulte o endereço configurável e abra o trajeto no Google Maps sempre que necessário.</p>
+          <a class="botao botao-secundario" href="#" data-link-mapa target="_blank" rel="noopener">Abrir no mapa</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao secao-alternada">
+      <div class="conteiner disposicao-contato">
+        <div class="painel-informativo superficie-cartao" data-animar>
+          <p class="rotulo">Informações úteis</p>
+          <h2>Canal certo para cada necessidade.</h2>
+
+          <dl class="detalhes-contato">
+            <div>
+              <dt>Telefone / WhatsApp</dt>
+              <dd data-telefone-contato>+55 (81) 99999-9999</dd>
+            </div>
+            <div>
+              <dt>E-mail</dt>
+              <dd data-email-contato>contato@sodinox.com.br</dd>
+            </div>
+            <div>
+              <dt>Endereço</dt>
+              <dd data-endereco-contato>Endereço comercial configurável, Recife - PE</dd>
+            </div>
+            <div>
+              <dt>Horário de atendimento</dt>
+              <dd data-horario-contato>Segunda a sexta, 08h às 17h</dd>
+            </div>
+          </dl>
+
+          <div class="acoes-contato">
+            <a class="botao botao-principal" href="#" data-link-whatsapp>WhatsApp</a>
+            <a class="botao botao-secundario" href="mailto:contato@sodinox.com.br" data-link-email>E-mail</a>
+          </div>
+        </div>
+
+        <div class="painel-mapa superficie-cartao" data-animar>
+          <div class="cabecalho-mapa">
+            <div>
+              <p class="rotulo">Google Maps</p>
+              <h2>Visualize a localização e trace a rota.</h2>
+            </div>
+            <a class="link-texto" href="#" data-link-mapa target="_blank" rel="noopener">Abrir em nova aba</a>
+          </div>
+
+          <div class="moldura-mapa">
+            <iframe
+              title="Mapa com a localização da Sodinox"
+              data-quadro-mapa
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="about:blank"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-chamada">
+      <div class="conteiner faixa-chamada superficie-cartao" data-animar>
+        <div>
+          <p class="rotulo">Pronto para atendimento</p>
+          <h2>Se preferir, fale com a Sodinox por WhatsApp e acelere seu orçamento.</h2>
+        </div>
+        <div class="acoes-chamada">
+          <a class="botao botao-principal" href="#" data-link-whatsapp>Enviar mensagem</a>
+          <a class="botao botao-secundario" href="../index.html">Voltar ao início</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape-site">
+    <div class="conteiner grade-rodape">
+      <div>
+        <strong>Sodinox</strong>
+        <p>Contato, endereço e mapa reunidos em uma experiência simples e objetiva.</p>
+      </div>
+      <div class="links-rodape">
+        <a href="../index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre Nós</a>
+      </div>
+      <p class="nota-rodape" data-ano-atual>© 2026 Sodinox</p>
+    </div>
+  </footer>
+</body>
+</html>

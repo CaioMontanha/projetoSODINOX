@@ -1,18 +1,18 @@
 :root {
-  --bg: #0c0f14;
-  --bg-elevated: #11161d;
-  --surface: rgba(17, 22, 29, 0.84);
-  --surface-strong: #151b23;
-  --line: rgba(226, 232, 240, 0.12);
-  --text: #edf2f7;
-  --muted: #a8b3c2;
-  --accent: #d7dde6;
-  --accent-strong: #f5f7fa;
-  --brand: #8f9aad;
-  --brand-deep: #1f2a3a;
-  --shadow: 0 22px 50px rgba(0, 0, 0, 0.32);
-  --radius: 22px;
-  --container: 1180px;
+  --fundo: #0c0f14;
+  --fundo-elevado: #11161d;
+  --superficie: rgba(17, 22, 29, 0.84);
+  --superficie-forte: #151b23;
+  --linha: rgba(226, 232, 240, 0.12);
+  --texto: #edf2f7;
+  --texto-suave: #a8b3c2;
+  --destaque: #d7dde6;
+  --destaque-forte: #f5f7fa;
+  --marca: #8f9aad;
+  --marca-profunda: #1f2a3a;
+  --sombra: 0 22px 50px rgba(0, 0, 0, 0.32);
+  --raio: 22px;
+  --conteiner-maximo: 1180px;
 }
 
 *,
@@ -27,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  color: var(--text);
+  color: var(--texto);
   background:
     radial-gradient(circle at top left, rgba(160, 170, 190, 0.16), transparent 32%),
     radial-gradient(circle at bottom right, rgba(60, 75, 100, 0.18), transparent 28%),
@@ -93,60 +93,60 @@ h3 {
   font-size: 1.15rem;
 }
 
-.container {
-  width: min(100% - 2rem, var(--container));
+.conteiner {
+  width: min(100% - 2rem, var(--conteiner-maximo));
   margin-inline: auto;
 }
 
-.section {
+.secao {
   padding: clamp(4.5rem, 8vw, 7rem) 0;
   position: relative;
 }
 
-.section-alt {
+.secao-alternada {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
   border-top: 1px solid rgba(255, 255, 255, 0.04);
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
-.section-cta {
+.secao-chamada {
   padding-top: 0;
 }
 
-.section-heading {
+.cabecalho-secao {
   max-width: 720px;
   margin-bottom: 1.8rem;
 }
 
-.section-copy {
+.texto-secao {
   max-width: 620px;
 }
 
-.eyebrow {
+.rotulo {
   margin: 0 0 0.9rem;
-  color: var(--brand);
+  color: var(--marca);
   text-transform: uppercase;
   letter-spacing: 0.22em;
   font-size: 0.78rem;
   font-weight: 700;
 }
 
-.lead {
+.texto-destaque {
   font-size: 1.08rem;
-  color: var(--muted);
+  color: var(--texto-suave);
   max-width: 65ch;
 }
 
-.card-surface {
+.superficie-cartao {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
     linear-gradient(180deg, rgba(17, 22, 29, 0.92), rgba(9, 12, 17, 0.92));
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+  border: 1px solid var(--linha);
+  box-shadow: var(--sombra);
   backdrop-filter: blur(12px);
 }
 
-.btn {
+.botao {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -163,27 +163,27 @@ h3 {
     color 180ms ease;
 }
 
-.btn:hover {
+.botao:hover {
   transform: translateY(-1px);
 }
 
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+.botao-principal {
+  background: linear-gradient(135deg, var(--destaque-forte), var(--destaque));
   color: #0b1016;
 }
 
-.btn-secondary {
+.botao-secundario {
   background: rgba(255, 255, 255, 0.02);
-  color: var(--text);
+  color: var(--texto);
   border-color: rgba(255, 255, 255, 0.16);
 }
 
-.text-link {
-  color: var(--accent-strong);
+.link-texto {
+  color: var(--destaque-forte);
   font-weight: 700;
 }
 
-.site-header {
+.cabecalho-site {
   position: sticky;
   top: 0;
   z-index: 50;
@@ -192,7 +192,7 @@ h3 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.header-bar {
+.barra-cabecalho {
   min-height: 5.2rem;
   display: flex;
   align-items: center;
@@ -200,14 +200,14 @@ h3 {
   gap: 1rem;
 }
 
-.brand {
+.marca {
   display: inline-flex;
   align-items: center;
   gap: 0.9rem;
   min-width: 0;
 }
 
-.brand img {
+.marca img {
   width: auto;
   height: 3.4rem;
   max-width: 11rem;
@@ -218,31 +218,31 @@ h3 {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
 }
 
-.brand-copy {
+.texto-marca {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
 
-.brand-copy strong {
+.texto-marca strong {
   font-size: 1.03rem;
   letter-spacing: 0.02em;
 }
 
-.brand-copy small {
-  color: var(--muted);
+.texto-marca small {
+  color: var(--texto-suave);
 }
 
-.site-nav {
+.navegacao-principal {
   display: flex;
   align-items: center;
   gap: 0.45rem;
 }
 
-.site-nav a {
+.navegacao-principal a {
   padding: 0.76rem 1rem;
   border-radius: 999px;
-  color: var(--muted);
+  color: var(--texto-suave);
   font-weight: 600;
   transition:
     background-color 180ms ease,
@@ -250,13 +250,13 @@ h3 {
     transform 180ms ease;
 }
 
-.site-nav a:hover,
-.site-nav a.is-active {
-  color: var(--text);
+.navegacao-principal a:hover,
+.navegacao-principal a.ativo {
+  color: var(--texto);
   background: rgba(255, 255, 255, 0.08);
 }
 
-.nav-toggle {
+.botao-menu {
   display: none;
   width: 3rem;
   height: 3rem;
@@ -266,35 +266,35 @@ h3 {
   padding: 0.55rem;
 }
 
-.nav-toggle span {
+.botao-menu span {
   display: block;
   height: 2px;
   width: 100%;
-  background: var(--text);
+  background: var(--texto);
   border-radius: 999px;
 }
 
-.nav-toggle span + span {
+.botao-menu span + span {
   margin-top: 0.34rem;
 }
 
-.skip-link {
+.link-salto {
   position: absolute;
   left: -999px;
   top: 0.75rem;
   z-index: 100;
   padding: 0.75rem 1rem;
   border-radius: 999px;
-  background: var(--accent-strong);
+  background: var(--destaque-forte);
   color: #091018;
   font-weight: 700;
 }
 
-.skip-link:focus {
+.link-salto:focus {
   left: 1rem;
 }
 
-.sr-only {
+.texto-acessivel {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -306,77 +306,77 @@ h3 {
   border: 0;
 }
 
-.site-footer {
+.rodape-site {
   padding: 2rem 0 2.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(6, 8, 12, 0.72);
 }
 
-.footer-grid {
+.grade-rodape {
   display: grid;
   grid-template-columns: 1.4fr auto auto;
   gap: 1rem;
   align-items: start;
 }
 
-.footer-grid strong {
+.grade-rodape strong {
   display: inline-block;
   margin-bottom: 0.45rem;
 }
 
-.footer-grid p,
-.footer-grid a {
-  color: var(--muted);
+.grade-rodape p,
+.grade-rodape a {
+  color: var(--texto-suave);
 }
 
-.footer-links {
+.links-rodape {
   display: grid;
   gap: 0.45rem;
 }
 
-.footer-note {
+.nota-rodape {
   text-align: right;
 }
 
-.hero-shell,
-.cta-banner {
+.casca-pagina,
+.faixa-chamada {
   padding: clamp(1.4rem, 3vw, 2rem);
-  border-radius: var(--radius);
+  border-radius: var(--raio);
 }
 
-.hero-shell {
+.casca-pagina {
   display: grid;
   gap: 0.85rem;
 }
 
-.cta-banner {
+.faixa-chamada {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
 }
 
-.cta-actions {
+.acoes-chamada {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-.center-actions {
+.acoes-centralizadas {
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
 }
 
-[data-animate] {
+[data-animar] {
   opacity: 1;
 }
 
-[data-animate].is-visible {
-  animation: rise 650ms ease both;
+[data-animar].visivel {
+  animation: subir 650ms ease both;
 }
 
-@keyframes rise {
+@keyframes subir {
   from {
     opacity: 0;
     transform: translateY(18px);
@@ -394,13 +394,13 @@ h3 {
 }
 
 @media (max-width: 920px) {
-  .nav-toggle {
+  .botao-menu {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .site-nav {
+  .navegacao-principal {
     position: absolute;
     left: 1rem;
     right: 1rem;
@@ -411,50 +411,50 @@ h3 {
     border-radius: 18px;
     background: rgba(10, 13, 18, 0.98);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: var(--shadow);
+    box-shadow: var(--sombra);
     opacity: 0;
     transform: translateY(-12px);
     pointer-events: none;
     transition: 180ms ease;
   }
 
-  .site-nav.is-open {
+  .navegacao-principal.aberto {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
   }
 
-  .site-nav a {
+  .navegacao-principal a {
     width: 100%;
   }
 
-  .footer-grid,
-  .cta-banner {
+  .grade-rodape,
+  .faixa-chamada {
     grid-template-columns: 1fr;
     display: grid;
   }
 
-  .footer-note {
+  .nota-rodape {
     text-align: left;
   }
 }
 
 @media (max-width: 640px) {
-  .container {
-    width: min(100% - 1.1rem, var(--container));
+  .conteiner {
+    width: min(100% - 1.1rem, var(--conteiner-maximo));
   }
 
-  .header-bar {
+  .barra-cabecalho {
     min-height: 4.8rem;
   }
 
-  .brand img {
+  .marca img {
     height: 2.8rem;
     max-width: 8.9rem;
   }
 
-  .hero-shell,
-  .cta-banner {
+  .casca-pagina,
+  .faixa-chamada {
     padding: 1.1rem;
   }
 }

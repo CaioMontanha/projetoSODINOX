@@ -8,56 +8,56 @@
   <title>Sodinox | Soluções em Aço Inox</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/home.css">
-  <script defer src="js/main.js"></script>
+  <link rel="stylesheet" href="estilos/geral.css">
+  <link rel="stylesheet" href="estilos/inicio.css">
+  <script defer src="scripts/principal.js"></script>
 </head>
-<body data-page="home">
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<body data-pagina="inicio">
+  <a class="link-salto" href="#conteudo-principal">Pular para o conteúdo</a>
 
-  <header class="site-header">
-    <div class="container header-bar">
-      <a class="brand" href="index.html" aria-label="Sodinox - página inicial">
-        <img src="images/logo-sodinox.png" alt="Logotipo da Sodinox">
-        <span class="brand-copy">
+  <header class="cabecalho-site">
+    <div class="conteiner barra-cabecalho">
+      <a class="marca" href="index.html" aria-label="Sodinox - página inicial">
+        <img src="imagens/marca-sodinox.png" alt="Logotipo da Sodinox">
+        <span class="texto-marca">
           <strong>Sodinox</strong>
           <small>Arte em aço inox</small>
         </span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <button class="botao-menu" type="button" aria-expanded="false" aria-controls="navegacao-principal">
         <span></span>
         <span></span>
         <span></span>
-        <span class="sr-only">Abrir menu</span>
+        <span class="texto-acessivel">Abrir menu</span>
       </button>
 
-      <nav id="main-nav" class="site-nav" aria-label="Navegação principal">
-        <a href="index.html" data-nav="home">Home</a>
-        <a href="pages/produtos.html" data-nav="produtos">Produtos</a>
-        <a href="pages/sobre.html" data-nav="sobre">Sobre Nós</a>
-        <a href="pages/contato.html" data-nav="contato">Contato</a>
+      <nav id="navegacao-principal" class="navegacao-principal" aria-label="Navegação principal">
+        <a href="index.html" data-navegacao="inicio">Início</a>
+        <a href="paginas/produtos.html" data-navegacao="produtos">Produtos</a>
+        <a href="paginas/sobre.html" data-navegacao="sobre">Sobre Nós</a>
+        <a href="paginas/contato.html" data-navegacao="contato">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main id="conteudo">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy" data-animate>
-          <p class="eyebrow">Vitrine institucional em aço inox</p>
+  <main id="conteudo-principal">
+    <section class="secao secao-principal">
+      <div class="conteiner grade-principal">
+        <div class="texto-principal" data-animar>
+          <p class="rotulo">Vitrine institucional em aço inox</p>
           <h1>Projetos sob medida para ambientes exigentes e marcas que valorizam acabamento premium.</h1>
-          <p class="lead">
+          <p class="texto-destaque">
             A Sodinox apresenta soluções em inox com foco em robustez, higiene, estética profissional e atendimento consultivo.
             Explore o catálogo, conheça nossa história e fale com a equipe em poucos cliques.
           </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="pages/produtos.html">Ver produtos</a>
-            <a class="btn btn-secondary" href="pages/contato.html" data-whatsapp>Falar no WhatsApp</a>
+          <div class="acoes-principais">
+            <a class="botao botao-principal" href="paginas/produtos.html">Ver produtos</a>
+            <a class="botao botao-secundario" href="paginas/contato.html" data-link-whatsapp>Falar no WhatsApp</a>
           </div>
 
-          <ul class="hero-highlights" aria-label="Destaques da Sodinox">
+          <ul class="destaques-principais" aria-label="Destaques da Sodinox">
             <li>
               <strong>+ qualidade</strong>
               <span>Acabamento pensado para durar.</span>
@@ -73,16 +73,16 @@
           </ul>
         </div>
 
-        <div class="hero-panel" data-animate>
-          <div class="hero-media card-surface">
-            <img src="images/soldagem inox.jpg" alt="Processo de soldagem em aço inox realizado pela Sodinox">
+        <div class="painel-principal" data-animar>
+          <div class="midia-principal superficie-cartao">
+            <img src="imagens/soldagem inox.jpg" alt="Processo de soldagem em aço inox realizado pela Sodinox">
           </div>
-          <div class="hero-stats">
-            <article class="stat card-surface">
+          <div class="estatisticas-principais">
+            <article class="indicador superficie-cartao">
               <strong>Catálogo</strong>
               <span>Peças, estruturas e projetos especiais</span>
             </article>
-            <article class="stat card-surface">
+            <article class="indicador superficie-cartao">
               <strong>Institucional</strong>
               <span>Site leve, objetivo e pronto para conversão</span>
             </article>
@@ -91,10 +91,10 @@
       </div>
     </section>
 
-    <section class="section section-alt">
-      <div class="container split-grid">
-        <div class="section-copy" data-animate>
-          <p class="eyebrow">Quem somos</p>
+    <section class="secao secao-alternada">
+      <div class="conteiner grade-dividida">
+        <div class="texto-secao" data-animar>
+          <p class="rotulo">Quem somos</p>
           <h2>Uma presença digital que traduz confiança e especialização.</h2>
           <p>
             A Sodinox atua com foco em soluções industriais, comerciais e personalizadas em aço inox, combinando visual moderno,
@@ -106,16 +106,16 @@
           </p>
         </div>
 
-        <div class="feature-stack" data-animate>
-          <article class="feature-card card-surface">
+        <div class="pilha-recursos" data-animar>
+          <article class="cartao-recurso superficie-cartao">
             <h3>Aplicações diversas</h3>
             <p>Bancadas, pias industriais, mesas, corrimãos, guarda-corpos, portões e estruturas sob medida.</p>
           </article>
-          <article class="feature-card card-surface">
+          <article class="cartao-recurso superficie-cartao">
             <h3>Comunicação direta</h3>
             <p>WhatsApp e e-mail prontos para contato rápido, sem formulários complexos ou barreiras desnecessárias.</p>
           </article>
-          <article class="feature-card card-surface">
+          <article class="cartao-recurso superficie-cartao">
             <h3>Visual industrial moderno</h3>
             <p>Identidade inspirada em aço escovado, com contraste, legibilidade e comportamento responsivo.</p>
           </article>
@@ -123,41 +123,41 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading" data-animate>
-          <p class="eyebrow">Produtos em destaque</p>
+    <section class="secao">
+      <div class="conteiner">
+        <div class="cabecalho-secao" data-animar>
+          <p class="rotulo">Produtos em destaque</p>
           <h2>Os principais itens do catálogo institucional.</h2>
-          <p>Uma seleção dos produtos já presentes no acervo visual para facilitar a navegação e o entendimento da oferta.</p>
+          <p class="texto-destaque">Uma seleção dos produtos já presentes no acervo visual para facilitar a navegação e o entendimento da oferta.</p>
         </div>
 
-        <div class="products-grid">
-          <article class="product-card card-surface" data-animate>
-            <img src="images/bancada inox.jpg" alt="Bancada em aço inox">
+        <div class="grade-produtos">
+          <article class="cartao-produto superficie-cartao" data-animar>
+            <img src="imagens/bancada inox.jpg" alt="Bancada em aço inox">
             <div>
               <h3>Bancadas em inox</h3>
               <p>Solução resistente e de fácil higienização para cozinhas industriais e áreas técnicas.</p>
             </div>
           </article>
 
-          <article class="product-card card-surface" data-animate>
-            <img src="images/coifa inox.jpg" alt="Coifa em aço inox">
+          <article class="cartao-produto superficie-cartao" data-animar>
+            <img src="imagens/coifa inox.jpg" alt="Coifa em aço inox">
             <div>
               <h3>Coifas e exaustão</h3>
               <p>Estruturas com acabamento profissional para ambientes que exigem desempenho e limpeza.</p>
             </div>
           </article>
 
-          <article class="product-card card-surface" data-animate>
-            <img src="images/corrimao inox.jpg" alt="Corrimão em aço inox">
+          <article class="cartao-produto superficie-cartao" data-animar>
+            <img src="imagens/corrimao inox.jpg" alt="Corrimão em aço inox">
             <div>
               <h3>Corrimãos</h3>
               <p>Peças sob medida com segurança, estética limpa e integração com diferentes tipos de projeto.</p>
             </div>
           </article>
 
-          <article class="product-card card-surface" data-animate>
-            <img src="images/guardacorpo inox.jpg" alt="Guarda-corpo em aço inox">
+          <article class="cartao-produto superficie-cartao" data-animar>
+            <img src="imagens/guardacorpo inox.jpg" alt="Guarda-corpo em aço inox">
             <div>
               <h3>Guarda-corpos</h3>
               <p>Visual sofisticado e alta durabilidade para fachadas, varandas, escadas e áreas elevadas.</p>
@@ -165,41 +165,41 @@
           </article>
         </div>
 
-        <div class="center-actions" data-animate>
-          <a class="btn btn-primary" href="pages/produtos.html">Abrir catálogo completo</a>
+        <div class="acoes-centralizadas" data-animar>
+          <a class="botao botao-principal" href="paginas/produtos.html">Abrir catálogo completo</a>
         </div>
       </div>
     </section>
 
-    <section class="section section-cta">
-      <div class="container cta-banner card-surface" data-animate>
+    <section class="secao secao-chamada">
+      <div class="conteiner faixa-chamada superficie-cartao" data-animar>
         <div>
-          <p class="eyebrow">Vamos conversar</p>
+          <p class="rotulo">Vamos conversar</p>
           <h2>Precisa de um projeto em inox? Chame a Sodinox agora.</h2>
-          <p>
+          <p class="texto-destaque">
             Direcionamos o visitante para o canal certo, reduzindo atrito e deixando o contato pronto para orçamentos e negociações.
           </p>
         </div>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="pages/contato.html" data-whatsapp>WhatsApp</a>
-          <a class="btn btn-secondary" href="mailto:contato@sodinox.com.br" data-email>E-mail</a>
+        <div class="acoes-chamada">
+          <a class="botao botao-principal" href="paginas/contato.html" data-link-whatsapp>WhatsApp</a>
+          <a class="botao botao-secundario" href="mailto:contato@sodinox.com.br" data-link-email>E-mail</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
+  <footer class="rodape-site">
+    <div class="conteiner grade-rodape">
       <div>
         <strong>Sodinox</strong>
         <p>Vitrine institucional em aço inox, preparada para evoluir com novos conteúdos e integrações.</p>
       </div>
-      <div class="footer-links">
-        <a href="pages/produtos.html">Produtos</a>
-        <a href="pages/sobre.html">Sobre Nós</a>
-        <a href="pages/contato.html">Contato</a>
+      <div class="links-rodape">
+        <a href="paginas/produtos.html">Produtos</a>
+        <a href="paginas/sobre.html">Sobre Nós</a>
+        <a href="paginas/contato.html">Contato</a>
       </div>
-      <p class="footer-note" data-current-year>© 2026 Sodinox</p>
+      <p class="nota-rodape" data-ano-atual>© 2026 Sodinox</p>
     </div>
   </footer>
 </body>

@@ -1,24 +1,24 @@
-.about-grid {
+.grade-sobre {
   display: grid;
   grid-template-columns: 1.08fr 0.92fr;
   gap: 1.15rem;
   align-items: stretch;
 }
 
-.story-card,
-.about-aside,
-.value-card,
-.gallery-item {
+.cartao-historia,
+.lateral-sobre,
+.cartao-valor,
+.item-galeria {
   border-radius: 20px;
 }
 
-.story-card,
-.about-aside,
-.value-card {
+.cartao-historia,
+.lateral-sobre,
+.cartao-valor {
   padding: 1.2rem;
 }
 
-.timeline {
+.linha-do-tempo {
   list-style: none;
   padding: 0;
   margin: 1rem 0 0;
@@ -26,24 +26,24 @@
   gap: 0.75rem;
 }
 
-.timeline li {
+.linha-do-tempo li {
   padding: 0.85rem 0.95rem;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.07);
-  color: var(--muted);
+  color: var(--texto-suave);
 }
 
-.timeline strong {
-  color: var(--text);
+.linha-do-tempo strong {
+  color: var(--texto);
 }
 
-.about-aside {
+.lateral-sobre {
   display: grid;
   gap: 1rem;
 }
 
-.about-aside img {
+.lateral-sobre img {
   width: 100%;
   min-height: 220px;
   border-radius: 18px;
@@ -52,63 +52,63 @@
   background: rgba(255, 255, 255, 0.03);
 }
 
-.about-metrics {
+.metricas-sobre {
   display: grid;
   gap: 0.8rem;
 }
 
-.about-metrics div {
+.metricas-sobre div {
   padding: 0.95rem 1rem;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.about-metrics strong {
+.metricas-sobre strong {
   display: block;
   margin-bottom: 0.25rem;
 }
 
-.about-metrics span {
-  color: var(--muted);
+.metricas-sobre span {
+  color: var(--texto-suave);
 }
 
-.values-grid {
+.grade-valores {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
-.value-card p {
-  color: var(--muted);
+.cartao-valor p {
+  color: var(--texto-suave);
   margin-bottom: 0;
 }
 
-.gallery-grid {
+.grade-galeria {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
-.gallery-item {
+.item-galeria {
   overflow: hidden;
 }
 
-.gallery-item img {
+.item-galeria img {
   width: 100%;
   height: 210px;
   object-fit: cover;
 }
 
-.gallery-item figcaption {
+.item-galeria figcaption {
   padding: 0.95rem 1rem 1.05rem;
-  color: var(--muted);
+  color: var(--texto-suave);
 }
 
 @media (max-width: 920px) {
-  .about-grid,
-  .values-grid,
-  .gallery-grid {
+  .grade-sobre,
+  .grade-valores,
+  .grade-galeria {
     grid-template-columns: 1fr;
   }
 }
